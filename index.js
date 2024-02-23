@@ -127,7 +127,7 @@ function calculateAmountOwed() {
 // Update the total expenses display
 function updateTotalExpensesAmount() {
     const totalExpense = expenses.reduce((sum, expense) => sum + expense.amount, 0);
-    totalExpensesAmountElement.textContent = "R " + totalExpense;
+    totalExpensesAmountElement.textContent = "$" + totalExpense;
 }
 
 // Refresh the list of expenses on the page
@@ -141,7 +141,7 @@ function updateExpenseList() {
 // Add a single expense item to the list
 function addExpenseToList(expense) {
     const expenseItem = document.createElement("li");
-    expenseItem.textContent = expense.category + ": R " + expense.amount;
+    expenseItem.textContent = expense.category + ": $" + expense.amount;
     const deleteIcon = createDeleteButton(expense.id, deleteExpense);
     expenseItem.appendChild(deleteIcon);
     expenseList.appendChild(expenseItem);
@@ -159,7 +159,7 @@ function updateTravelersList() {
 function addTravelerToList(traveler) {
     const travelerItem = document.createElement("div");
     travelerItem.classList.add("traveler-item");
-    travelerItem.textContent = traveler.name + ": R " + traveler.amountOwed;
+    travelerItem.textContent = traveler.name + ": $" + traveler.amountOwed;
     const removeButton = createDeleteButton(traveler.id, removeTraveler);
     travelerItem.appendChild(removeButton);
     travelersList.appendChild(travelerItem);
