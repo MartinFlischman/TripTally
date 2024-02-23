@@ -71,7 +71,7 @@ function handleNewTraveler() {
     const travelerName = travelerNameInput.value.trim();
     if (travelerName !== "") {
     const newTravelerRef = push(travelersRef);
-    set(newTravelerRef, { name: travelerName, amountOwed: 0 }); // Save new traveler to Firebase
+    set(newTravelerRef, { name: travelerName }); // Save new traveler to Firebase
     travelerNameInput.value = "";
     }
 }

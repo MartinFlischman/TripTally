@@ -1,0 +1,16 @@
+{
+    "name": "Trip Tally",
+    "short_name": "TripTally",
+    "description": "Manage group travel expenses with ease.",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#52796f",
+    "icons": [
+    {
+        "src": "assets/icon.png",
+        "sizes": "48x48 72x72 96x96 144x144 192x192 256x256 384x384 512x512 1024x1024",
+        "type": "image/png"
+    }
+    ]
+}
