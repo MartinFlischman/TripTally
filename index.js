@@ -175,3 +175,19 @@ function createDeleteButton(id, deleteFunction) {
     return button;
 }
 
+// Check if the browser supports service workers
+if ('serviceWorker' in navigator) {
+  // When the page loads, register the service worker
+    window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/service-worker.js') // Register the service worker file
+        .then(registration => {
+        // If registration is successful, log a message
+        console.log('Service Worker registered with scope:', registration.scope);
+        })
+        .catch(error => {
+        // If registration fails, log an error message
+        console.error('Service Worker registration failed:', error);
+        });
+    });
+}
+
