@@ -1,7 +1,16 @@
+:root {
+    --background-color: #fffcf2;
+    --text-color: #252422;
+    --primary-color: #52796f;
+    --secondary-color: #ff7f51;
+    --tertiary-color: #ff9b54;
+    --modal-overlay-color: rgba(0, 0, 0, 0.55);
+}
+
 body {
     font-family: "Inter", Arial, sans-serif;
-    background-color: #fffcf2;
-    color: #252422;
+    background-color: var(--background-color);
+    color: var(--text-color);
     margin: 0;
     padding: 0;
 }
@@ -15,7 +24,7 @@ body {
 
 h1 {
     font-size: 36px;
-    color: #252422;
+    color: var(--text-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,14 +59,14 @@ button[type="submit"] {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
-    background-color: #fffcf2;
-    color: #252422;
+    background-color: var(--background-color);
+    color: var(--text-color);
     box-sizing: border-box;
 }
 
 button[type="submit"] {
-    background-color: #52796f;
-    color: #fffcf2;
+    background-color: var(--primary-color);
+    color: var(--background-color);
     cursor: pointer;
 }
 
@@ -95,8 +104,8 @@ li:last-child,
 
 #expense-list li button,
 .traveler-item button {
-    background-color: #ff7f51;
-    color: #fffcf2;
+    background-color: var(--secondary-color);
+    color: var(--background-color);
     border: none;
     cursor: pointer;
     padding: 5px 8px;
@@ -105,7 +114,7 @@ li:last-child,
 
 #expense-list li button:hover,
 .traveler-item button:hover {
-    background-color: #ff9b54;
+    background-color: var(--tertiary-color);
 }
 
 button .fas {
@@ -123,7 +132,7 @@ button .fas {
     width: 100%;
     height: 100%;
     padding: 0 10px;
-    background-color: rgba(0, 0, 0, 0.55);
+    background-color: var(--modal-overlay-color);
 }
 
 .display-modal {
@@ -133,7 +142,7 @@ button .fas {
 }
 
 .modal-content {
-    background-color: #fffcf2;
+    background-color: var(--background-color);
     margin: 15% auto;
     padding: 20px;
     border-radius: 4px;
@@ -152,9 +161,9 @@ button .fas {
 
 /* Styles for the "Open Travelers" button */
 #open-modal-button {
-    background-color: #52796f;
+    background-color: var(--primary-color);
     display: block;
-    color: #fffcf2;
+    color: var(--background-color);
     border: none;
     padding: 10px 20px;
     margin: 0 auto 28px;
@@ -171,24 +180,6 @@ button:hover {
 #total-expenses-amount {
     font-size: 20px;
     font-weight: initial;
-}
-
-.modal-content {
-    background-color: #fffcf2;
-    margin: 15% auto;
-    padding: 20px;
-    border-radius: 4px;
-    max-width: 400px;
-    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
-    position: relative;
-}
-
-.close-button {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 10px;
-    cursor: pointer;
 }
 
 #travelers-form h2 {
