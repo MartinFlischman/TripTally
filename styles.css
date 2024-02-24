@@ -1,9 +1,9 @@
 :root {
-    --background-color: #fffcf2;
-    --text-color: #252422;
-    --primary-color: #52796f;
-    --secondary-color: #ff7f51;
-    --tertiary-color: #ff9b54;
+    --background-color: #242424;
+    --text-color: #ededed;
+    --primary-color: #b4ffbd;
+    --secondary-color: #cfb1fb;
+    --tertiary-color: #b78af7;
     --modal-overlay-color: rgba(0, 0, 0, 0.55);
 }
 
@@ -173,7 +173,7 @@ button .fas {
 
 #open-modal-button:hover,
 button:hover {
-    background-color: #84a98c;
+    background-color: #88fc95;
 }
 
 /* Styles for the Total Expenses Amount */

@@ -190,4 +190,3 @@ if ('serviceWorker' in navigator) {
         });
     });
 }
-
