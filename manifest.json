@@ -4,7 +4,7 @@
     "description": "Manage group travel expenses with ease.",
     "icons": [
         {
-            "src": "assets/icon.png",
+            "src": "assets/maskable-icon.png",
             "sizes": "512x512",
             "type": "image/png"
         }
