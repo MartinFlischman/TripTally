@@ -1,3 +1,20 @@
+// Import necessary Firebase modules
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js";
+import { getDatabase, ref, push, onValue, remove, set } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js";
+
+// Firebase configuration
+const firebaseConfig = {
+    databaseURL: "https://triptally-a2331-default-rtdb.europe-west1.firebasedatabase.app/"
+};
+
+// Initialize Firebase App and Database Reference
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+const database = getDatabase(app);
+const expensesRef = ref(database, "expenses"); // Reference to expenses in the database
+const travellersRef = ref(database, "travellers"); // Reference to travellers in the database
+
 // Retrieve necessary elements for manipulation
 const expenseForm = document.getElementById("expense-form");
 const totalExpensesAmountElement = document.getElementById("total-expenses-amount");
