@@ -88,7 +88,7 @@ ul {
 }
 
 li,
-.traveler-item {
+.traveller-item {
     padding: 12px 0;
     text-transform: capitalize;
     border-bottom: 1px solid #ccc;
@@ -98,12 +98,12 @@ li,
 }
 
 li:last-child,
-.traveler-item:last-child {
+.traveller-item:last-child {
     border-bottom: none;
 }
 
 #expense-list li button,
-.traveler-item button {
+.traveller-item button {
     background-color: var(--secondary-color);
     color: var(--background-color);
     border: none;
@@ -113,7 +113,7 @@ li:last-child,
 }
 
 #expense-list li button:hover,
-.traveler-item button:hover {
+.traveller-item button:hover {
     background-color: var(--tertiary-color);
 }
 
@@ -159,7 +159,7 @@ button .fas {
     cursor: pointer;
 }
 
-/* Styles for the "Open Travelers" button */
+/* Styles for the "Open Travellers" button */
 #open-modal-button {
     background-color: var(--primary-color);
     display: block;
@@ -182,11 +182,11 @@ button:hover {
     font-weight: initial;
 }
 
-#travelers-form h2 {
+#travellers-form h2 {
     margin-top: 0;
 }
 
-#travelers-list {
+#travellers-list {
     padding: 0;
     margin: 0;
     list-style: none;

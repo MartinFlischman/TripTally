@@ -5,9 +5,9 @@ Trip Tally is a web application designed to help manage group travel expenses ef
 ## Features
 
 -   Log travel expenses under different categories such as accommodation, food, gas, and sightseeing.
--   Add travelers to the trip to split costs and automatically calculate each person's share.
--   Real-time updates on how much each traveler owes as expenses are added or modified.
--   Easily view or delete expenses and travelers as needed.
+-   Add travellers to the trip to split costs and automatically calculate each person's share.
+-   Real-time updates on how much each traveller owes as expenses are added or modified.
+-   Easily view or delete expenses and travellers as needed.
 
 ## Installation
 
@@ -21,10 +21,10 @@ No additional installation steps are required!
 
 1. **Adding Expenses**: Use the expense form to log new expenses. Select the category, enter the amount, and click "Add Expense."
 
-2. **Managing Travelers**: Click the "Manage Travelers" button to open the modal. Add new travelers using the form and view the list of current travelers.
+2. **Managing Travellers**: Click the "Manage Travellers" button to open the modal. Add new travellers using the form and view the list of current travellers.
 
 3. **Expense History**: View the list of expenses under the "Expense History" section. Each expense item includes the category, amount, and an option to delete it.
 
 ## Configuration
 
-No specific configuration is required for Trip Tally. However, ensure that you have an internet connection to use the Firebase Realtime Database for storing expense and traveler data.
+No specific configuration is required for Trip Tally. However, ensure that you have an internet connection to use the Firebase Realtime Database for storing expense and traveller data.
