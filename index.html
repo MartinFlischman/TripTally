@@ -67,7 +67,30 @@
         <ul id="expense-list"></ul>
     </div>
 
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js";
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyC4LSTPftjlD7OOtIsgn9-lDH0Ba2MQIpg",
+            authDomain: "triptally-a2331.firebaseapp.com",
+            databaseURL: "https://triptally-a2331-default-rtdb.europe-west1.firebasedatabase.app",
+            projectId: "triptally-a2331",
+            storageBucket: "triptally-a2331.appspot.com",
+            messagingSenderId: "486331918521",
+            appId: "1:486331918521:web:6593125bd0079aad805368",
+            measurementId: "G-WYS1PL19P8"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+
     <script src="index.js" type="module"></script>
+
 </body>
 
 </html>
