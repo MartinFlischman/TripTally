@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#242424">
     <meta name="description"
         content="Trip Tally simplifies group travel expenses by effortlessly tracking costs and splitting bills. With real-time updates and intuitive features, manage your travel finances seamlessly for a stress-free journey.">
-    <meta name="theme-color" content="#242424">
     <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon">
     <link rel="icon" href="assets/maskable_icon.png" type="image/png" sizes="512x512" purpose="maskable">
     <title>Trip Tally</title>
@@ -20,9 +20,7 @@
     <div class="container">
         <h1><i class="fas fa-route"></i> Trip Tally</h1>
         <h2 class="heading-total">Total Expenses: <span id="total-expenses-amount">R 0</span></h2>
-
         <button id="open-modal-button"><i class="fas fa-users"></i> Manage Travellers</button>
-
         <!-- Modal for Travellers section -->
         <div id="travellers-modal" class="modal">
             <div class="modal-content">
@@ -33,16 +31,13 @@
                     <input type="text" id="traveller-name" required>
                     <button type="submit" id="add-traveller"><i class="fas fa-user-plus"></i> Add Traveller</button>
                 </form>
-
                 <h3>Travellers</h3>
                 <div id="travellers-list">
                     <!-- Travellers' names and amounts will be displayed here -->
                 </div>
             </div>
         </div>
-
         <hr>
-
         <form id="expense-form">
             <h2>Add Expense</h2>
             <label for="expense-category">Category:</label>
@@ -62,15 +57,11 @@
             <input type="number" id="expense-amount" min="0" required>
             <button type="submit"><i class="fas fa-plus"></i> Add Expense</button>
         </form>
-
         <hr>
-
         <h2>Expense History</h2>
         <ul id="expense-list"></ul>
     </div>
-
-    <script src="index.js" type="module"></script>
-
+    <script src="index.js" type="module" async></script>
 </body>
 
 </html>
