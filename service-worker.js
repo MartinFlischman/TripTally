@@ -5,7 +5,7 @@ const urlsToCache = [
     '/index.html',
     '/styles.css',
     '/index.js',
-    '/assets/icon.png',
+    '/assets/maskable_icon.png',
 ];
 
 self.addEventListener('install', event => {
