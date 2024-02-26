@@ -5,7 +5,7 @@ import { getDatabase, ref, push, onValue, remove, set } from "https://www.gstati
 
 // Firebase configuration
 const firebaseConfig = {
-    databaseURL: "https://triptally-a2331-default-rtdb.europe-west1.firebasedatabase.app/"
+    databaseURL: "https://trip-tally-46880-default-rtdb.europe-west1.firebasedatabase.app/"
 };
 
 // Initialize Firebase App and Database Reference
